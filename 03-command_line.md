@@ -46,7 +46,10 @@ chown:    change ownership
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+```
+The ls command lists out the contents of the directory you are currently in
+```
 
 ---
 
