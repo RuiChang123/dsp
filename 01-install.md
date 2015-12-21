@@ -37,9 +37,9 @@ import sklearn
 
 Did you install Python 2 or 3? Why? How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> Python 2.7.11
->> I can use command line and type python. The version number will show up.
-
+>> '''Python 2.7.11
+I can use command line and type python. The version number will show up.
+'''
 ---
 
 
