@@ -48,7 +48,9 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 
 > > 
 ```
-The ls command lists out the contents of the directory you are currently in
+The "ls" command lists out the contents of the directory you are currently in.
+"ls -a" lists all the files in the directory including the hidden files.
+"ls -l" lists all the files in the directory and the detail information.
 ```
 
 ---
