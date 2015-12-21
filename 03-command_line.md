@@ -14,7 +14,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 > > 
 ```
-#pwd
+**pwd**
 print working directory
 #hostname
 my computer's network name
