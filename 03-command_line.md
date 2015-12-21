@@ -60,7 +60,11 @@ The "ls" command lists out the contents of the directory you are currently in.
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
+> > 
+```
+The xargs command expects the input from standard input and executes command over the input.
+$ echo a b c d e f| xargs -n 3
+a b c
+d e f
 ---
 
