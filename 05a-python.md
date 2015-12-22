@@ -66,7 +66,31 @@ output: [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 
+```
+List comprehensions provide a concise way to create lists. 
+It consists of brackets containing an expression followed by a for clause. The expressions can be anything.
+example 1:
+a=[1,2,3,4]
+b=[x**2 for x in a]
+print b
+output: [1,4,9,16]
+equals to: map(lambda x: x**2, a)
+example 2:
+a=[1,2,3,4,5,6,7,8,9]
+b=[e for e in a if e%3==0]
+print b
+output: [3, 6, 9]
+equals to: filter(lambda x: x%3==0, a)
+set comprehensions:
+a={'a','b','c'}
+b={'q','a','r','b','c','p'}
+c={e for e in b if e not in a}
+print c
+output: {'p', 'q', 'r'}
+dictionary comprehensions:
+print {i:chr(i+64) for i in range(1,5)}
+output: {1: 'A', 2: 'B', 3: 'C', 4: 'D'}
 
 ---
 
