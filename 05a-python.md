@@ -26,7 +26,9 @@ The lists and sets are very different in Python:
 1. Lists can have duplicate elements but sets can not.
 2. Sets don't support indicating.
 3. Sets support mathematical operations like: union, intersection, difference and symmetric difference.
-
+```
+>>
+```
 Finding an element:
     list: list.index(element)
     set: because elements in sets don't have order, the index you get may be different as what you see in the sets.
