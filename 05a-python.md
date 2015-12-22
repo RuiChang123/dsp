@@ -28,9 +28,8 @@ The lists and sets are very different in Python:
 3. Sets support mathematical operations like: union, intersection, difference and symmetric difference.
 Finding an element:
     list: list.index(element)
-    set: for i in set:
-             if i==element:
-                 print i
+    set: because elements in sets don't have order, the index you get may different as what you see.
+         list(set).index(element)
 ```
 ---
 
