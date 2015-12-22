@@ -33,7 +33,7 @@ List.index(element)
 for i in set:
     if i==element:
         print i
-
+```
 ---
 
 ###Q3. Lambda Function
