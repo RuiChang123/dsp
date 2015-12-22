@@ -37,7 +37,28 @@ Finding an element:
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 
+```
+In Python, lambda creats a function to be called later. It returns the function instead of assigning it to a name.
+The lambdas can be used as a function shorthand that allows us to embed a function within the code.
+example 1:
+a=[1,2,3,4]
+b=[11,12,13,14]
+c=[5,6,7,8]
+map(lambda x,y,z: x+y+z, a,b,c)
+output: [17, 20, 23, 26]
+example 2:
+a=[1,2,3,4,5,6,7,8,9,10]
+filter(lambda x: x%2==0, a)
+output: [2,4,6,8,10]
+example 3:
+colors = ["blue", "lavender", "red", "yellow"]
+sorted(colors, key=lambda color: len(color), reverse=True)
+output: ['lavender', 'yellow', 'blue', 'red']
+example 4:
+student_tuples = [('john', 'A', 15),('jane', 'B', 12),('dave', 'B', 10)]
+sorted(student_tuples, key=lambda s: s[2])
+output: [('dave', 'B', 10), ('jane', 'B', 12), ('john', 'A', 15)]
 
 ---
 
