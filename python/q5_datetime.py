@@ -18,3 +18,4 @@ date_stop = '14-Jul-2015'
 d1=datetime.strptime(date_start, "%m-%b-%Y")
 d1=datetime.strptime(date_stop, "%m-%b-%Y")
 (d2-d1).days
+ 
