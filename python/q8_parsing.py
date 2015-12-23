@@ -7,13 +7,23 @@
 # The below skeleton is optional.  You can use it or you can write the script with an approach of your choice.
 
 
-import csv
+import pandas as pd
 
-  def read_data(data):
-   # COMPLETE THIS FUNCTION
+ def read_data(path):
+  	f=pd.read_csv(path)
+  	return f
 
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
+ def parsed_data(self):
+  	return abs(self['Goals']-self['Goals Allowed'])
 
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+ def get_min_score_difference(parsed_data):
+    return min(parsed_data)
+
+ def get_team(self, value, parsed_data):
+    f=pd.DataFrame({'difference':abs(self['Goals']-self['Goals Allowed']),'Team':self['Team']})
+    return f[f['difference']==value]['Team']
+
+r=read_data('/Users/ruichang/ds/metis/prework/dsp/python/football.csv')
+p=parsed_data(r)
+m=get_min_score_difference(p)
+get_team(r,m)
