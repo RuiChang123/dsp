@@ -70,7 +70,13 @@ This data is available in this file:  [faculty.csv](python/faculty.csv)
 
 ####Q4. Find how many different email domains there are (Ex:  mail.med.upenn.edu, upenn.edu, email.chop.edu, etc.).  Print the list of unique email domains.
 
->> REPLACE THIS WITH YOUR RESPONSE
+>> 
+```
+email.chop.edu
+upenn.edu
+cceb.med.upenn.edu
+mail.med.upenn.edu
+```
 
 Place your code in this file: [advanced_python_regex.py](python/advanced_python_regex.py)
 
