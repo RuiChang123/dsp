@@ -32,25 +32,25 @@ get_info(d)
 #Q2
 #For this question, I assume that all the titles are in the same format: 
 #professor title(Assistant/associate) of field(Biostatistics in this case).
-t=[' '.join(x.split(' ')[:-2]) for x in titles] #make a list of strings, each string shows the title
-#get the information of title
-get_info(t)
+t=[' '.join(x.split(' ')[:-2]) for x in titles] #make a list of strings, each string shows the title 
+#get the information of title 
+get_info(t) 
 
-#Q3
-#print email
-emails
+#Q3 
+#print email 
+emails 
 
-#Q4
-#get a list of domains of each email
-email_dom=[]
-for e in emails:
-    i=e.find('@')
-    email_dom=email_dom+[e[i+1:]]
-#get the dict of domain information
-dom_info=get_info(email_dom)
-#print keys of dom_info to get the list of domains
-for key in dom_info:
-	print key
+#Q4 
+#get a list of domains of each email 
+email_dom=[] 
+for e in emails: 
+    i=e.find('@') 
+    email_dom=email_dom+[e[i+1:]] 
+#get the dict of domain information 
+dom_info=get_info(email_dom) 
+#print keys of dom_info to get the list of domains 
+for key in dom_info: 
+	print key 
 
 
 
