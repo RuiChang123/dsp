@@ -67,5 +67,5 @@ k1=sorted(k1,key=lambda x: x[1])
 for x in k1[:3]:
     print (x,l1[x])
 
-
+ 
     
