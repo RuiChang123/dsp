@@ -39,5 +39,5 @@ plt.legend()
 plt.savefig('/Users/ruichang/ds/metis/prework/dsp/statistics/3-1.png')
 ```
 
-![alt text](https://github.com/RuiChang123/dsp/statistics/3-1.png "3-1")
+![alt text](https://github.com/RuiChang123/dsp/blob/master/statistics/3-1.png "3-1")
 
