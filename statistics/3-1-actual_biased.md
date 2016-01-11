@@ -3,6 +3,8 @@
 The code and the plot for this question is shown below:
 ```
 import collections
+import matplotlib.pyplot as plt
+
 #read data
 resp=read_stats('2002FemResp.dat.gz','2002FemResp.dct')
 
