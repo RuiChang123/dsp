@@ -30,7 +30,27 @@ plt.xlabel("mother's age")
 plt.ylabel('birth weight/lb')
 plt.legend()
 plt.savefig('/Users/ruichang/ds/metis/prework/dsp/statistics/7-1-2.png')
-```
 
+#pearson's correlation
+mean_age=df7.agepreg.mean()
+mean_wgt=df7.totalwgt_lb.mean()
+cor_age=(df7.agepreg.var())**0.5
+cor_wgt=(df7.totalwgt_lb.var())**0.5
+age=[x-mean_age for x in df7.agepreg]
+wgt=[x-mean_wgt for x in df7.totalwgt_lb]
+t=np.array([x*y for x,y in zip(age,wgt)])
+cor=t.mean()/cor_age/cor_wgt
+cor
+
+#spearman's rank correlation
+pregAge=df7.agepreg
+birthWgt=df7.totalwgt_lb
+order_pregAge=pregAge.argsort()
+order_birthWgt=birthWgt.argsort()
+rank_preAge=order_pregAge.argsort()
+rank_birthWgt=order_birthWgt.argsort()
+from scipy.stats.stats import pearsonr
+pearsonr(rank_preAge,rank_birthWgt)
+```
 ![alt text](https://github.com/RuiChang123/dsp/blob/master/statistics/7-1-1.png "7-1")
 ![alt text](https://github.com/RuiChang123/dsp/blob/master/statistics/7-1-2.png "7-1")
