@@ -63,8 +63,8 @@ def cohend(group1,group2):
     diff=group1.mean()-group2.mean()
     n1=len(group1)
     n2=len(group2)
-#considering the degree of freedom, we should use n-1 instead of n when calculating var and pooled var. Although there 
-#is not much difference for big size samples.
+#considering the degree of freedom, we should use n-1 instead of n when calculating var and pooled var. 
+#Although there is not much difference for big size samples.
     var1=np.var(group1,ddof=1)
     var2=np.var(group2,ddof=1)
     pooled_var=((n1-1)*var1+(n2-1)*var2)/(n1+n2-2)
@@ -85,16 +85,5 @@ OUTPUT:
 0.0288790518999
 -0.0886729334723
 
-def get_hist(data):
-#this function takes a list of data and returns a dict which shows the frequency of each data in the list
-    d={}
-    l=[]
-    for e in data:
-        if e in l:
-            d[e]=d[e]+1
-        else:
-            d[e]=1
-            l=l+[e]
-    return d
     
 
