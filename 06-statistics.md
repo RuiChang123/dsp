@@ -82,7 +82,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 How do frequentist and Bayesian statistics compare?
 
 >> Frequentist approach focuses on P(data|hypothesis), the probability of the data given the hypothesis. Bayesian approach focuses on P(hypothesis|data), the probability of the hypothesis given the data. 
-Frequentist: Sampling is infinite and decision rules can be sharp. Data are a repeatable random sample - there is a frequency. Underlying parameters are fixed
+Frequentist: Sampling is infinite and decision rules can be sharp. Data are a repeatable random sample - there is a frequency. Underlying parameters are fixed.
 Bayesian: Unknown quantities are treated probabilistically and the state of the world can always be updated. Data are observed from the realised sample. Parameters are unknown and described probabilistically. It is the data which are fixed.
 
 ---
